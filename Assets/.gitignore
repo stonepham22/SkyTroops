@@ -5,7 +5,9 @@
 !.gitignore
 !package.png
 !/_Assets
+!/_Art
 !/_Data
+!/_Prefabs
 !/_Scenes
 !/_Scripts
 !/_UI
