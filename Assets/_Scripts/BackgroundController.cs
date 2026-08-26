@@ -3,30 +3,36 @@ using UnityEngine;
 public class BackgroundController : MonoBehaviour
 {
     [SerializeField] private float _scrollSpeed = 2f;
-    [SerializeField] private float _resetPositionY = -20f;
-    private Vector3 _startPosition;
+    [SerializeField] private float _resetPositionY = -3.6f;
+    [SerializeField] private float _backgroundLength = 17.3f;
     private SpriteRenderer _spriteRenderer;
 
     void Reset()
     {
         _spriteRenderer = GetComponent<SpriteRenderer>();
         FitWidthToCamera();
+        float backgroundLength = _spriteRenderer.bounds.size.y;
+        Debug.Log("Background Length: " + backgroundLength);
     }
 
-    void Awake()
-    {
-        _startPosition = transform.position;
-    }
-
-    // Update is called once per frame
+        // Update is called once per frame
     void Update()
     {
         transform.Translate(Vector3.down*_scrollSpeed*Time.deltaTime);
-        if(transform.position.y<_resetPositionY)
+        CheckBackgroundOutOfCamera();
+    }
+
+    private void CheckBackgroundOutOfCamera()
+    {
+        if (transform.position.y < _resetPositionY)
         {
-            transform.position = _startPosition;
+            transform.position = new Vector3(
+                transform.position.x, 
+                transform.position.y+_backgroundLength*2, 
+                transform.position.z);
         }
     }
+
     private void FitWidthToCamera()
     {
     Camera mainCamera = Camera.main;
