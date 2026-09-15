@@ -32,7 +32,7 @@ public class EnemySpawner : MonoBehaviour
 
     private GameObject GetPrefabFromPool()
     {
-        return _enemyPoolManager.Get();
+        return _enemyPoolManager.Get(); 
     }
 
     private Vector3 GetSpawnPosition()
