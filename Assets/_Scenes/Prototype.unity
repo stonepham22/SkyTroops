@@ -811,9 +811,21 @@ PrefabInstance:
       propertyPath: _rigidbody2D
       value: 
       objectReference: {fileID: 7974468394747207222}
+    - target: {fileID: 1296028039636414603, guid: 56b75647d239ac746b71683e285e70dd, type: 3}
+      propertyPath: _enemyPoolManager
+      value: 
+      objectReference: {fileID: 1258109013}
     - target: {fileID: 2342868788299472475, guid: 56b75647d239ac746b71683e285e70dd, type: 3}
       propertyPath: m_Name
       value: EnemyPrefab
+      objectReference: {fileID: 0}
+    - target: {fileID: 2342868788299472475, guid: 56b75647d239ac746b71683e285e70dd, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5000707047094049007, guid: 56b75647d239ac746b71683e285e70dd, type: 3}
+      propertyPath: m_IsTrigger
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 5722708072894805620, guid: 56b75647d239ac746b71683e285e70dd, type: 3}
       propertyPath: m_LocalPosition.x
@@ -821,7 +833,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 5722708072894805620, guid: 56b75647d239ac746b71683e285e70dd, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 8.83
+      value: -5.5
       objectReference: {fileID: 0}
     - target: {fileID: 5722708072894805620, guid: 56b75647d239ac746b71683e285e70dd, type: 3}
       propertyPath: m_LocalPosition.z

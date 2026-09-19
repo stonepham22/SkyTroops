@@ -23,11 +23,11 @@ public class EnemySpawner : MonoBehaviour
         }
     }
 
-    private void SpawnEnemy()
+    void SpawnEnemy()
     {
-        GameObject enemyPrefab = GetPrefabFromPool();
+        GameObject enemy = GetPrefabFromPool();
         Vector3 spawnPosition = GetSpawnPosition();
-        Object.Instantiate(enemyPrefab,spawnPosition,Quaternion.identity);
+        enemy.transform.SetPositionAndRotation(spawnPosition, Quaternion.identity);
     }
 
     private GameObject GetPrefabFromPool()

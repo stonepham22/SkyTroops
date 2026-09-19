@@ -13,9 +13,10 @@ GameObject:
   - component: {fileID: 6213051512510548711}
   - component: {fileID: 6749136550866746380}
   - component: {fileID: 2986069521293593643}
+  - component: {fileID: 7038765703807933293}
   m_Layer: 0
   m_Name: Plane
-  m_TagString: Untagged
+  m_TagString: Player
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -81,7 +82,7 @@ SpriteRenderer:
   m_LightmapParameters: {fileID: 0}
   m_GlobalIlluminationMeshLod: 0
   m_SortingLayerID: -1688629089
-  m_SortingLayer: 2
+  m_SortingLayer: 3
   m_SortingOrder: 0
   m_MaskInteraction: 0
   m_Sprite: {fileID: 6765427693961343398, guid: f4bd6a11e0390be4e9c9a81fe7c7d43d, type: 3}
@@ -189,3 +190,15 @@ BoxCollider2D:
   m_AutoTiling: 0
   m_Size: {x: 1.32, y: 0.83}
   m_EdgeRadius: 0
+--- !u!114 &7038765703807933293
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8247371756894668651}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b01a2223521a29c448d7c43fac7d7c72, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::PlayerDamageReceiver
